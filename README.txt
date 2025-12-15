@@ -47,7 +47,9 @@ A API abre pelo link: http://127.0.0.1:8000/
 ---
 
 ### A API já conta com um usuário para acesso ao Django administration:
+
 http://127.0.0.1:8000/admin/login/?next=/admin/login
+
 Username: admin
 Password: 123456
 
@@ -66,12 +68,18 @@ Sair: exit ()
 ### 2. Para modificar a senha do usuário:
  
 python manage.py changepassword <username>
-No caso desse projeto: python manage.py changepassword admin
-Password:     (preencha a nova senha)
+
+No caso desse projeto:
+
+python manage.py changepassword admin
+
+Password: <preencha a nova senha>
 
 
 ### 3. Para criar um novo usuário principal:
+
 python manage.py createsuperuser
+
 Username:
 Email:
 Password:

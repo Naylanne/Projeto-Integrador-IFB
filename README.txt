@@ -7,7 +7,8 @@ Curso **Backend - Python com Django** no **IFB/Riacho Fundo**
 ---
 
 ## Descrição do Projeto
-O Projeto Integrador consistiu em desenvolver uma API pela empresa fictícia **DigitalFlow Solutions** (empresa de tecnologia especializada em plataformas corporativas) para o banco de grande porte **InnovaBank**, que precisa de um sistema moderno para gerenciar seu portfólio interno de projetos de TI.
+O Projeto Integrador consistiu no desenvolvimento de uma API pela empresa **DigitalFlow Solutions** (empresa de tecnologia especializada em plataformas corporativas) 
+para o banco de grande porte **InnovaBank**, que precisava de um sistema moderno para gerenciar seu portfólio interno de projetos de TI.
 
 ---
 

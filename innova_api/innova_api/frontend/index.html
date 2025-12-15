@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InnovaBank - Painel de Projetos de TI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1> InnovaBank: Portfólio de Projetos de TI</h1>
+</header>
+
+<div class="container">
+    
+    <div class="auth-panel">
+        <div id="login-form-container">
+
+            <p id="auth-message"></p>
+        </div>
+        <div id="logout-container" style="display: none;">
+            <p>Bem-vindo(a), <span id="logged-user"></span>! Você tem permissão de escrita.</p>
+            <button id="logout-button">Sair</button>
+            <p>Token: Seu token de autenticação será armazenado temporariamente.</p>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="extra-links">
+<h2>📚 Navegação e Documentação</h2>
+
+<a href="http://127.0.0.1:8000/api/v1/projetos/" target="_blank">API: Projetos</a>
+<a href="http://127.0.0.1:8000/api/v1/departamentos/" target="_blank">API: Departamentos</a>
+<a href="http://127.0.0.1:8000/api/v1/tecnologias/" target="_blank">API: Tecnologias</a>
+<a href="http://127.0.0.1:8000/api/docs/" target="_blank">Swagger UI (Documentação Interativa)</a>
+<a href="http://127.0.0.1:8000/admin/" target="_blank">Painel Admin Django</a>
+<hr>
+
+</div>
+
+    <hr>
+    
+    <div class="controls">
+        <h2>🔎 Filtros de Consulta (Projetos)</h2>
+
+        <div class="filter-group">
+            <label for="search">Buscar por Nome/Descrição:</label>
+            <input type="text" id="search" placeholder="Ex: Cloud, Dashboard...">
+        </div>
+
+        <div class="filter-group">
+            <label for="status-filter">Status do Projeto:</label>
+            <select id="status-filter">
+                <option value="">Todos</option>
+                <option value="Planejado">Planejado</option>
+                <option value="Em Execução">Em Execução</option>
+                <option value="Concluido">Concluído</option>
+                <option value="Cancelado">Cancelado</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="ordering-select">Ordenar por:</label>
+            <select id="ordering-select">
+                <option value="data_inicio">Data de Início (Crescente)</option>
+                <option value="-data_inicio">Data de Início (Decrescente)</option>
+                <option value="status">Status</option>
+            </select>
+        </div>
+        
+        <button id="apply-filters">Aplicar Filtros</button>
+    </div>
+
+    <hr>
+
+    <div class="results">
+        <h2>📊 Projetos Encontrados (<span id="project-count">0</span>)</h2>
+        <table id="projects-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Projeto</th>
+                    <th>Departamento</th>
+                    <th>Status</th>
+                    <th>Início</th>
+                    <th>Tecnologias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="6">Carregando projetos...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <p>Consumindo API Django REST Framework v1 com Token Authentication.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

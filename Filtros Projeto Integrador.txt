@@ -1,0 +1,53 @@
+Projetos por departamento id
+
+http://127.0.0.1:8000/api/v1/projetos/?departamento=1
+http://127.0.0.1:8000/api/v1/projetos/?departamento=2
+
+
+Projetos por risco:
+
+http://127.0.0.1:8000/api/v1/projetos/?risco=Baixo
+http://127.0.0.1:8000/api/v1/projetos/?risco=Alto
+http://127.0.0.1:8000/api/v1/projetos/?risco=Medio
+http://127.0.0.1:8000/api/v1/projetos/?risco=Critico
+
+Projetos por status
+
+http://127.0.0.1:8000/api/v1/projetos/?status=Planejado
+http://127.0.0.1:8000/api/v1/projetos/?status=Em Execução
+http://127.0.0.1:8000/api/v1/projetos/?status=Concluido
+http://127.0.0.1:8000/api/v1/projetos/?status=Cancelado
+
+
+Projetos iniciados entre duas datas:
+
+http://127.0.0.1:8000/api/v1/projetos/?data_inicio_min=2024-01-01&data_inicio_max=2024-12-31
+http://127.0.0.1:8000/api/v1/projetos/?data_inicio_min=2023-10-01&data_inicio_max=2024-01-01
+
+
+Projetos que utilizam determinada tecnologia:
+
+http://127.0.0.1:8000/api/v1/projetos/?tecnologia=1
+http://127.0.0.1:8000/api/v1/projetos/?tecnologia=2
+
+
+Tecnologias por tipo:
+
+http://127.0.0.1:8000/api/v1/tecnologias/?tipo=Linguagem
+http://127.0.0.1:8000/api/v1/tecnologias/?tipo=Framework
+http://127.0.0.1:8000/api/v1/tecnologias/?tipo=Banco de Dados
+http://127.0.0.1:8000/api/v1/tecnologias/?tipo=Serviço Cloud
+
+
+Departamentos ativos/inativos:
+
+http://127.0.0.1:8000/api/v1/departamentos/?ativo=true
+http://127.0.0.1:8000/api/v1/departamentos/?ativo=false
+
+Departamentos por id
+
+http://127.0.0.1:8000/api/v1/projetos/?departamento=1
+http://127.0.0.1:8000/api/v1/projetos/?departamento=2
+http://127.0.0.1:8000/api/v1/projetos/?departamento=3
+http://127.0.0.1:8000/api/v1/projetos/?departamento=4
+http://127.0.0.1:8000/api/v1/projetos/?departamento=5

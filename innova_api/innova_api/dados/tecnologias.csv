@@ -1,0 +1,6 @@
+nome,tipo,versao,fornecedor,descricao
+AWS Lambda,Serviço Cloud,,Amazon Web Services,Funções serverless para a nuvem.
+Python,Linguagem,3.10,Python Software Foundation,Linguagem de propósito geral e data science.
+PostgreSQL,Banco de Dados,14,,Banco de dados relacional robusto.
+Angular,Framework,16,Google,Framework frontend.
+Django,Framework,4.2,,Framework backend para Python.

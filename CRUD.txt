@@ -1,0 +1,79 @@
+curl -X POST http://127.0.0.1:8000/api/v1/departamentos/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "TI",
+           "gestor": "Carlos",
+           "descricao": "Tecnologia da Informação",
+           "ativo": true
+         }'
+
+
+curl -X POST http://127.0.0.1:8000/api/v1/tecnologias/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Python",
+           "tipo": "Linguagem",
+           "versao": "3.10",
+           "fornecedor": "Comunidade"
+         }'
+
+
+curl -X POST http://127.0.0.1:8000/api/v1/projetos/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Dashboard de Risco",
+           "descricao": "Sistema para monitorar riscos",
+           "departamento": 1,
+           "data_inicio": "2025-12-01",
+           "status": "Planejado",
+           "risco": "Medio",
+           "orcamento": "50000.00",
+           "tecnologias": [1]
+         }'
+
+
+
+curl -X PUT http://127.0.0.1:8000/api/v1/departamentos/1/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Tecnologia",
+           "gestor": "Ana",
+           "descricao": "Departamento atualizado",
+           "ativo": true
+         }'
+
+curl -X PUT http://127.0.0.1:8000/api/v1/tecnologias/1/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Python",
+           "tipo": "Linguagem",
+           "versao": "3.12",
+           "fornecedor": "PSF"
+         }'
+
+curl -X PUT http://127.0.0.1:8000/api/v1/projetos/1/ \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nome": "Dashboard de Risco Atualizado",
+           "descricao": "Nova descrição",
+           "departamento": 1,
+           "data_inicio": "2025-12-01",
+           "status": "Em Execução",
+           "risco": "Alto",
+           "orcamento": "75000.00",
+           "tecnologias": [1]
+         }'
+
+
+curl -X DELETE http://127.0.0.1:8000/api/v1/departamentos/1/
+
+curl -X DELETE http://127.0.0.1:8000/api/v1/tecnologias/1/
+
+curl -X DELETE http://127.0.0.1:8000/api/v1/projetos/1/
+
+
+curl -X GET http://127.0.0.1:8000/api/v1/projetos/
+
+curl -X GET http://127.0.0.1:8000/api/v1/departamentos/
+
+curl -X GET http://127.0.0.1:8000/api/v1/tecnologias/

@@ -1,0 +1,5 @@
+nome,descricao,departamento_nome,data_inicio,data_fim,status,tecnologias_nomes,risco,orcamento
+Migração Cloud,Mover serviços legados para AWS Lambda.,TI,2024-03-01,2024-09-30,Em Execução,"AWS Lambda;Python",Alto,R$ 80.000,00
+Dashboard de Risco,Criação de painel de BI com dados de segurança.,Dados,2024-05-15,2024-11-30,Planejado,"Python;PostgreSQL",Médio,R$ 45.000,00
+Novo Portal Web,Desenvolvimento do portal de autoatendimento usando Angular.,TI,2023-10-01,2024-02-29,Concluido,"Angular;Django",Baixo,R$ 120.000,00
+Firewall Upgrade,Atualização de todos os firewalls da rede.,Segurança,2024-01-01,2024-06-30,Cancelado,N/A,Alto,R$ 60.000,00

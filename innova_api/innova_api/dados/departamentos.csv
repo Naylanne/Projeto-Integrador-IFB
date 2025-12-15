@@ -1,0 +1,5 @@
+nome,gestor,descricao,ativo
+TI,Ana Maria,Gerencia toda infraestrutura e desenvolvimento interno.,True
+Segurança,Carlos Rocha,Responsável pela proteção de dados e compliance.,True
+Dados,Patricia Lima,Área de Business Intelligence e Data Analytics.,True
+Infraestrutura Legada,Eduardo Santos,Gerencia sistemas mais antigos e manutenção de hardware.,False

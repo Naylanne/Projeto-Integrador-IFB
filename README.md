@@ -97,6 +97,8 @@ User.objects.create_user(username="joao", password="123456")
 
 ### Usar token no Swagger com JWT: Bearer SEU_TOKEN_AQUI
 
+http://127.0.0.1:8000/api/v1/token/
+
 ---
 
 ### Para ter acesso ao visual personalizado da API instale a extensão Live Server no VS Code e abra o arquivo index.html com botão direito/Open with Live Server.

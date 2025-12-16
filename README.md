@@ -95,6 +95,16 @@ User.objects.create_user(username="joao", password="123456")
 
 ---
 
+### Para criar um token acesse:
+
+http://localhost:8000/admin/
+
+Authentication an authorization
+
+Users/Add
+
+---
+
 ### Usar token no Swagger com JWT: Bearer SEU_TOKEN_AQUI
 
 http://127.0.0.1:8000/api/v1/token/

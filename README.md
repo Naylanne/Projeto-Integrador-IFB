@@ -16,7 +16,7 @@ para o banco de grande porte **InnovaBank**, que precisava de um sistema moderno
 
 ### 1. Abra a pasta innova_api na IDE (utilizamos VS Code)
 
-### 2. Preparar o ambiente
+### 2. Prepare o ambiente
 No prompt cmd digite:
 
 python -m venv meuAmbiente

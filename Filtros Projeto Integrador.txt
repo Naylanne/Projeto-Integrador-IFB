@@ -1,3 +1,5 @@
+No navegador web:
+
 Projetos por departamento id
 
 http://127.0.0.1:8000/api/v1/projetos/?departamento=1
@@ -51,3 +53,23 @@ http://127.0.0.1:8000/api/v1/projetos/?departamento=2
 http://127.0.0.1:8000/api/v1/projetos/?departamento=3
 http://127.0.0.1:8000/api/v1/projetos/?departamento=4
 http://127.0.0.1:8000/api/v1/projetos/?departamento=5
+
+
+No terminal:
+
+python manage.py shell
+
+from portfolio.models import Projeto
+
+Projeto.objects.filter(departamento__id=1)
+
+Projeto.objects.filter(risco="Alto")
+
+Projeto.objects.filter(status="Em Execução")
+
+from datetime import date
+Projeto.objects.filter(data_inicio__gte=date(2024,1,1), data_inicio__lte=date(2024,12,31))
+
+Projeto.objects.filter(tecnologias__id=3)
+
+exit()

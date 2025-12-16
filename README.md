@@ -90,6 +90,7 @@ Password:
 python manage.py shell
 
 from django.contrib.auth.models import User
+
 User.objects.create_user(username="joao", password="123456")
 
 ---

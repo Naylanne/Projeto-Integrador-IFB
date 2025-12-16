@@ -14,7 +14,9 @@ para o banco de grande porte **InnovaBank**, que precisava de um sistema moderno
 
 ## Como Iniciar a API
 
-### 1. Preparar o ambiente
+### 1. Abra a pasta innova_api na IDE (utilizamos VS Code)
+
+### 2. Preparar o ambiente
 No prompt cmd digite:
 
 python -m venv meuAmbiente
@@ -22,24 +24,24 @@ python -m venv meuAmbiente
 meuAmbiente\Scripts\activate
 
 
-### 2. Entre na pasta da API utilizando o comando:
+### 3. Entre na pasta da API utilizando o comando:
 
 cd innova_api
 
 
-### 3. Instale os frameworks utilizando o seguinte comando:
+### 4. Instale os frameworks utilizando o seguinte comando:
 
 pip install -r requirements.txt
 
 
-### 4. Execute as migrações:
+### 5. Execute as migrações:
 
 python manage.py makemigrations 
 
 python manage.py migrate
 
 
-### 5. E inicie a API através do comando:
+### 6. E inicie a API através do comando:
 
 python manage.py runserver
 
@@ -103,7 +105,8 @@ Authentication an authorization
 
 Users/Add
 
-Verifique em: http://127.0.0.1:8000/api/v1/token/
+Verifique em: 
+http://127.0.0.1:8000/api/v1/token/
 
 ---
 
